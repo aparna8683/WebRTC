@@ -3,14 +3,18 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import SocketProvider from "./Providers/Socket";
 import Room from "./Pages/Room";
+import PeerProvider from "./Providers/Peer";
+
 
 const App = () => {
   return (
     <SocketProvider>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/room/:roomId" element={<Room />} />
-      </Routes>
+      <PeerProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/room/:roomId" element={<Room />} />
+        </Routes>
+      </PeerProvider>
     </SocketProvider>
   );
 };

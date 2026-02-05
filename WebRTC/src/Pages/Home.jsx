@@ -44,7 +44,6 @@ const Home = () => {
         <div className="bg-white w-80 p-6 rounded-xl shadow-xl text-center">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">Join a Room</h2>
 
-          {/* Email Input */}
           <input
             type="email"
             placeholder="Enter your email"
@@ -55,7 +54,6 @@ const Home = () => {
             }}
           />
 
-          {/* Room Number Input */}
           <input
             type="text"
             placeholder="Enter room number"
@@ -66,7 +64,6 @@ const Home = () => {
             }}
           />
 
-          {/* Button */}
           <button
             onClick={handleJoinRoom}
             className="w-full bg-indigo-600 text-white py-2 rounded-lg font-semibold hover:bg-indigo-700 transition"
